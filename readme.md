@@ -361,7 +361,7 @@ There are three types of GitHub Pages sites: [project, user, and organization](h
 
 Examples:
 - Create React App (which uses webpack under the hood) [requires the user to set a `"homepage"` property in their `package.json` so that built assets are referenced correctly in the final compiled HTML](https://create-react-app.dev/docs/deployment/#building-for-relative-paths).
-  - This [has been often been thought of as an issue with `gh-pages`](https://github.com/tschaub/gh-pages/issues/285#issuecomment-805321474), though this package isn't able to control a project's build configuration.
+  - This [has been often been thought of as an issue with `gh-pages`](https://github.com/freitzzz/gh-pages/issues/285#issuecomment-805321474), though this package isn't able to control a project's build configuration.
 - Vite [requires a `"base"` property in its `vite.config.js`](https://vitejs.dev/guide/static-deploy.html#github-pages)
 - Next.js does not support deploying to GitHub Pages [because of an opinionated static export approach that puts all assets under a `_next` direcotry that GitHub Pages ignores](https://github.com/vercel/next.js/issues/9460).
 
@@ -377,9 +377,9 @@ NODE_DEBUG=gh-pages npm run deploy
 
 ## Dependencies
 
-Note that this plugin requires Git 1.9 or higher (because it uses the `--exit-code` option for `git ls-remote`).  If you'd like to see this working with earlier versions of Git, please [open an issue](https://github.com/tschaub/gh-pages/issues).
+Note that this plugin requires Git 1.9 or higher (because it uses the `--exit-code` option for `git ls-remote`).  If you'd like to see this working with earlier versions of Git, please [open an issue](https://github.com/freitzzz/gh-pages/issues).
 
-![Test Status](https://github.com/tschaub/gh-pages/workflows/Test/badge.svg)
+![Test Status](https://github.com/freitzzz/gh-pages/workflows/Test/badge.svg)
 
 ## Tips
 
@@ -423,7 +423,7 @@ In order to deploy with GitHub Actions, you will need to define a user and set t
 
 The `secrets.GITHUB_TOKEN` is provided automatically as part of the GitHub Action and does not require any further configuration, but simply needs to be passed in as an environmental variable to the step. `GITHUB_REPOSITORY` is the owner and repository name and is also passed in automatically, but does not need to be added to the `env` list.
 
-See [Issue #345](https://github.com/tschaub/gh-pages/issues/345) for more information
+See [Issue #345](https://github.com/freitzzz/gh-pages/issues/345) for more information
 
 #### Deploying with GitHub Actions and a named script
 
@@ -446,4 +446,4 @@ You will need to utilize the `--` option to pass any additional arguments:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-See [Pull Request #368](https://github.com/tschaub/gh-pages/pull/368) for more information.
+See [Pull Request #368](https://github.com/freitzzz/gh-pages/pull/368) for more information.
