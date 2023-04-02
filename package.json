@@ -1,5 +1,5 @@
 {
-  "name": "gh-pages",
+  "name": "gh-pagez",
   "version": "5.0.0",
   "description": "Publish to a gh-pages branch on GitHub (or any other branch on any other remote)",
   "keywords": [
@@ -8,17 +8,17 @@
     "github"
   ],
   "author": {
-    "name": "Tim Schaub",
-    "url": "http://tschaub.net/"
+    "name": "João Freitas",
+    "url": "https://joaomagfreitas.link"
   },
   "license": "MIT",
-  "homepage": "https://github.com/tschaub/gh-pages",
+  "homepage": "https://github.com/freitzzz/gh-pages",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tschaub/gh-pages.git"
+    "url": "git://github.com/freitzzz/gh-pages.git"
   },
   "bugs": {
-    "url": "https://github.com/tschaub/gh-pages/issues"
+    "url": "https://github.com/freitzzz/gh-pages/issues"
   },
   "main": "lib/index.js",
   "scripts": {

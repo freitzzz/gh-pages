@@ -12,7 +12,7 @@ set -o errexit
 MERGE_RE=Merge\ pull\ request\ #\([0-9]+\)\ from\ \([^/]+\)\/[^\ ]+\ \(.*\)
 
 GITHUB_URL=https://github.com
-PULLS_URL=${GITHUB_URL}/tschaub/gh-pages/pull
+PULLS_URL=${GITHUB_URL}/freitzzz/gh-pages/pull
 
 display_usage() {
   cat <<-EOF
